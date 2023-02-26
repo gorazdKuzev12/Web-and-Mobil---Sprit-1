@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* Header */
+.header-content {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.header-content img {
+  height: 60px;
+}
+
+.menu {
+  background-color: rgba(0, 0, 139, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  padding: 0 30px;
+}
+.slogan h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: auto;
+}
+.menu-icon img {
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(1000%);
+}
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.nav-menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+  color: #b4aee8;
+}
+
+.main-content {
+  height: 80%;
+}
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px; /* set height to fill viewport height */
+  background-color: #cfd2cf;
+}
+.line {
+  width: 60%;
+  height: 2px;
+  margin: 60px 0;
+  background-color: #f1f7b5;
+  transform: translateY(-50%);
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+.social-media a:not(:last-child) {
+  margin-right: 20px;
+}
+.social-media img {
+  height: 30px;
+}
+.copy p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.copy p::before {
+  content: "|";
+  margin-right: 20px;
+}
+.copy p:first-child::before {
+  content: "";
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .header-content {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  .header-content img {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    height: auto;
+    padding: 10px;
+  }
+  .slogan h1 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    height: 60%;
+  }
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+  .line {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 5px;
+  }
+  .slogan h1 {
+    font-size: 10px;
+  }
+  .main-content {
+    height: 63%;
+  }
+  .social-media img {
+    height: 25px;
+  }
+  .copy p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .line {
+    margin: 30px 0;
+  }
+}
