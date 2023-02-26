@@ -72,6 +72,55 @@ body {
 
 .main-content {
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* align child vertically */
+}
+
+.image-wrapper img {
+  width: 450px;
+  height: 300px;
+}
+
+.logo-wrapper {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+}
+
+.logo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact,
+.address {
+  margin-top: 20px;
+}
+
+.contact img {
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  margin-right: 10px;
 }
 /* Footer */
 
