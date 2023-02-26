@@ -162,6 +162,37 @@ body {
   width: 40%;
   text-align: center;
 }
+
+/* Apartments */
+
+.apartments-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.apartments-container img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.apartments-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+}
+
+/* set image width to 100% to fill grid cell */
+.apartments-images img {
+  width: 55%;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-self: center; /* center horizontally */
+  align-self: center; /* center vertically */
+}
+
 footer {
   display: flex;
   flex-direction: column;
