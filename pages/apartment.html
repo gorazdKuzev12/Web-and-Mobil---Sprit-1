@@ -6,28 +6,10 @@
     <title>Erasmus+ Website</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/xlu-include-file.js"></script>
+    <script src="../js/mod/apartment/apartmentService.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <img src="../assets/logos/erasmus-logo.png" alt="Erasmus+ Logo" />
-      </div>
-      <div class="menu">
-        <div class="slogan">
-          <h1>Explora el mundo, expande tu mente - Erasmus!</h1>
-        </div>
-        <div class="menu-icon">
-          <img src="../assets/logos/menu-icon.png" alt="Menu Icon" />
-        </div>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#">Students</a></li>
-            <li><a href="#">Apartments</a></li>
-            <li><a href="#">Country</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header id="main_header" xlu-include-file="./templates/header.html"></header>
     <main class="main-content">
       <div class="container">
         <div class="image-wrapper">
@@ -51,6 +33,8 @@
     <footer id="main_footer" xlu-include-file="./templates/footer.html"></footer>
   <script>
     xLuIncludeFile();
+    const apartment = getApartments();
+    console.log(apartment)
   </script>
 </body>
 </html>
