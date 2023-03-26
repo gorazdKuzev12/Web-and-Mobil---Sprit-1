@@ -757,5 +757,8 @@ h2 {
     padding: 10px;
     color:#b4aee8;
   }
+  .university-container{
+    grid-template-columns: repeat(1,1fr);
+  }
 
 }
