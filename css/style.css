@@ -398,12 +398,10 @@ footer {
   margin-right: 0;
 }
 
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  line-height: 1.6;
-  color: #333;
+.logo-container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 /* Container */
@@ -536,6 +534,20 @@ h2 {
     width: 20px; /* Reduce icon size for smaller screens */
     height: 20px;
   }
+  .student-pic {
+    width: 150px;
+    height: 120px;
+  }
+  .arrow-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .student-info {
+    margin: 10px 0;
+  }
+  .student-description {
+    width: 80%;
+  }
 }
 
 /* For screens between 768px and 1023px */
@@ -616,6 +628,27 @@ h2 {
     width: 350px; /* Increase width for larger screens */
     margin: 20px; /* Restore original margin */
   }
+  .form-container {
+    width: 80%;
+  }
+
+  .logo-container {
+    padding-top: 80px;
+  }
+  .student-pic {
+    width: 250px;
+    height: 200px;
+  }
+  .arrow-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .student-info {
+    margin: 10px 0;
+  }
+  .student-description {
+    width: 60%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -637,5 +670,33 @@ h2 {
   }
   .line {
     margin: 30px 0;
+  }
+  .form-container {
+    width: 70%;
+    padding: 12px;
+  }
+
+  .logo-container {
+    padding-top: 30px;
+  }
+
+  .form-input,
+  .form-submit {
+    font-size: 14px;
+  }
+  .student-pic {
+    width: 120px;
+    height: 100px;
+  }
+  .arrow-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .student-info {
+    margin: 5px 0;
+  }
+  .student-description {
+    width: 90%;
+    font-size: 14px;
   }
 }
