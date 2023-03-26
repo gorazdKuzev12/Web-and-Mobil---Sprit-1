@@ -581,7 +581,13 @@ h2 {
     width: 100%; /* Set image width to 100% to fit within smaller screens */
     height: auto; /* Set height to auto to maintain aspect ratio */
   }
-
+  .news-info-desc {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .news-title-res {
+    font-size: 12px;
+  }
   .logo-wrapper {
     width: 40px; /* Increase logo size for medium screens */
     height: 40px;
@@ -687,11 +693,17 @@ h2 {
   .line {
     margin: 30px 0;
   }
+  .news-info-desc {
+    font-size: 10px;
+    margin: 10px;
+  }
   .form-container {
     width: 70%;
     padding: 12px;
   }
-
+  .news-title-res {
+    font-size: 10px;
+  }
   .logo-container {
     padding-top: 30px;
   }
