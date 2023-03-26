@@ -671,6 +671,7 @@ h2 {
   button[type="submit"] img {
     height: 20px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -748,4 +749,13 @@ h2 {
   button[type="submit"] img {
     height: 20px;
   }
+  .address{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .contact{
+    font-size: 14px;
+    padding: 10px;
+  }
+
 }
