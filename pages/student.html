@@ -6,6 +6,7 @@
     <title>Erasmus+ Website</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/xlu-include-file.js"></script>
+    <script src="../js/mod/ajax/serviceAjax.js"></script>
   </head>
   <body>
   <header id="main_header" xlu-include-file="./templates/header.html"></header>
@@ -19,7 +20,7 @@
           />
           <img
             class="student-pic"
-            src=../assets/students/student_anja.jpg"
+            src="../assets/students/student_anja.jpg"
             alt="Image description"
           />
           <img
@@ -54,6 +55,16 @@
   <footer id="main_footer" xlu-include-file="./templates/footer.html"></footer>
   <script>
     xLuIncludeFile();
+    // TODO: load student data and assign to proper placeholders
+    async function loadStudentData(id = 1) {
+      // from some reason this request doesn't work
+      // const url = `http://localhost:4500/students/${id}`;
+      const url = `http://localhost:4500/students`;
+      const student = await get(url);
+      console.log(student);
+    }
+
+    loadStudentData();
   </script>
   </body>
 </html>

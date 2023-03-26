@@ -14,26 +14,27 @@
       <div class="apartments-container">
         <div class="apartments-images" id="image-container">
         </div>
-        <img
-          class="arrow-logo"
-          src="../assets/logos/arrow.png"
-          alt="Image description"
-        />
+        <img class="arrow-logo" src="../assets/logos/arrow.png" alt="Image description"/>
       </div>
     </main>
   <footer id="main_footer" xlu-include-file="./templates/footer.html"></footer>
     <script>
-      xLuIncludeFile();
-      const apartments = getApartments();
+      xLuIncludeFile()
+    </script>
+  </body>
+  <script>
+    async function getResponseAndLoadToHtml() {
+      const apartments = await getApartments();
       const appartamentObject = JSON.parse(apartments)
       const appartamentHolder = document.getElementById('image-container')
       for (apartment of appartamentObject.appartments) {
-        const img = document.createElement('img')
-        img.src = `"file:/C:/assets/apartments${apartment.img_url}"`
-        img.alt = "Apertment"
-        appartamentHolder.append(img)
-        console.log(apartment)
+        const img = document.createElement('img');
+        const url = await fetch(`../assets/apartments${apartment.img_url}`).then(result => result.url);
+        img.src = url;
+        img.alt = "Apertment";
+        appartamentHolder.append(img);
       }
-    </script>
-  </body>
+    }
+    getResponseAndLoadToHtml();
+  </script>
 </html>
