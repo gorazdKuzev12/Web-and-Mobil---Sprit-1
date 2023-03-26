@@ -521,8 +521,8 @@ h2 {
   }
 
   .image-wrapper img {
-    width: 100%; /* Set image width to 100% to fit within smaller screens */
-    height: auto; /* Set height to auto to maintain aspect ratio */
+    width: 90%; /* Set image width to 100% to fit within smaller screens */
+    height: 90%; /* Set height to auto to maintain aspect ratio */
   }
 
   .logo-wrapper {
@@ -578,8 +578,8 @@ h2 {
   }
 
   .image-wrapper img {
-    width: 100%; /* Set image width to 100% to fit within smaller screens */
-    height: auto; /* Set height to auto to maintain aspect ratio */
+    width: 90%; /* Set image width to 100% to fit within smaller screens */
+    height: 90%; /* Set height to auto to maintain aspect ratio */
   }
   .news-info-desc {
     font-size: 12px;
@@ -741,7 +741,10 @@ h2 {
   button[type="submit"] {
     padding: 10px;
   }
-
+  .image-wrapper img {
+    width: 90%; /* Set image width to 100% to fit within smaller screens */
+    height: 90%; /* Set height to auto to maintain aspect ratio */
+  }
   button[type="submit"] img {
     height: 20px;
   }
