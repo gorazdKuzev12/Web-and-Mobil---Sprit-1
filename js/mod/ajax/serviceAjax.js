@@ -12,7 +12,7 @@
 //     }
 // }()
 
-function get(url = 'http://localhost:4500') {
+async function get(url = 'http://localhost:4500') {
     xhttp = new XMLHttpRequest();
     xhttp.open("GET", url, false);
     xhttp.send(null);
