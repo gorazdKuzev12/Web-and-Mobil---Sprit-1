@@ -761,4 +761,8 @@ h2 {
     grid-template-columns: repeat(1,1fr);
   }
 
+  .apartments-container .arrow-logo {
+    height: 40px;
+    width: 40px;
+  }
 }
